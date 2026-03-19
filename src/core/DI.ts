@@ -2,7 +2,11 @@ import { SingletonDependency, TransientDependency } from "./Dependency";
 import { DIList } from "./DIList";
 
 export class DI {
-  public static dependencies: DIList = {};
+  private static dependencies: DIList = {};
+
+  public static get registeredDependencies(): string[] {
+    return Object.keys(this.dependencies);
+  }
 
   public static addTransient<T>(dependency: new () => T) {
     this.dependencies[dependency.name] = new TransientDependency(dependency);
@@ -16,7 +20,7 @@ export class DI {
     const registeredDependency = this.dependencies[dependency.name];
     if (registeredDependency === undefined) {
       throw new Error(
-        `Could not inject dependency ${dependency.name}: define it with addTransient() or addSingleton()`,
+        `Could not inject dependency ${dependency.name}: register it with addTransient() or addSingleton()`,
       );
     }
 
