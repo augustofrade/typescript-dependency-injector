@@ -1,5 +1,5 @@
 {
-  "name": "ts-dependency-injector",
+  "name": "dave-di",
   "version": "0.1.0",
   "description": "Simple dependency injector for TypeScript",
   "main": "dist/index.js",
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/augustofrade/typescript-dependency-injector.git"
+    "url": "git+https://github.com/augustofrade/dave-dependency-injector.git"
   },
   "exports": {
     ".": {
@@ -31,9 +31,9 @@
   "author": "augustofrade",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/augustofrade/typescript-dependency-injector/issues"
+    "url": "https://github.com/augustofrade/dave-dependency-injector/issues"
   },
-  "homepage": "https://github.com/augustofrade/typescript-dependency-injector#readme",
+  "homepage": "https://github.com/augustofrade/dave-dependency-injector#readme",
   "devDependencies": {
     "prettier": "3.8.1",
     "typescript": "^5.9.3"
