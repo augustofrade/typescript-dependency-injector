@@ -1,0 +1,29 @@
+{
+  "name": "ts-dependency-injector",
+  "version": "0.0.1",
+  "description": "Simple dependency injector for TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/augustofrade/typescript-dependency-injector.git"
+  },
+  "keywords": [
+    "ts",
+    "typesecript",
+    "di",
+    "dependency",
+    "injection"
+  ],
+  "author": "augustofrade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/augustofrade/typescript-dependency-injector/issues"
+  },
+  "homepage": "https://github.com/augustofrade/typescript-dependency-injector#readme",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
