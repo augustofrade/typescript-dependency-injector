@@ -20,7 +20,7 @@ export class DI {
     const registeredDependency = this.dependencies[dependency.name];
     if (registeredDependency === undefined) {
       throw new Error(
-        `Could not inject dependency ${dependency.name}: register it with addTransient() or addSingleton()`,
+        `Could not inject dependency ${dependency.name}: register it with addTransient() or addSingleton()`
       );
     }
 
